@@ -19,7 +19,7 @@ public class MovieController {
 
     @Autowired
     MovieService movieService;
-//?
+
     @GetMapping
     public ResponseEntity<List<Movie>> getMovieDatabase() {
         return new ResponseEntity<>(movieService.getAllMovies(), HttpStatus.OK);

@@ -13,7 +13,7 @@ public class MovieService {
 
     @Autowired
     MovieRepository movieRepository;
-//?
+
     public List<Movie> getAllMovies(){
         return movieRepository.findAll();
     }
